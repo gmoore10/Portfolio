@@ -1,8 +1,19 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+  <v-app>
+    <div id="app">
+      <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/projects">Projects</router-link> |
+        <router-link to="/skills">Skills</router-link> |
+        <router-link to="/contact">Contact</router-link>
+      </div>
+      <transition name="router-anim"
+                  enter-active-class="animated fadeIn"
+                  leave-active-class="animated fadeOut">
+      <router-view/>
+      </transition>
+    </div>
+  </v-app>
 </template>
 
 <script>
@@ -12,12 +23,27 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
+
+  body {
+    background-color: rgb(233, 233, 233);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* html, body {
+    height: calc(100% - 50px);
+  } */
+
+  #app {
+    background: #fff;
+    /* width: 50%; */
+    padding: 30px;
+    margin: auto;
+    height: calc(60% - 50px);
+  }
+
+  .page {
+    position: absolute;
+    width: inherit;
+  }
 </style>
+
