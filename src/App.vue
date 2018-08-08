@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <div id="animate" style="position: absolute; z-index: 1000; top: 50%; left: 50%;"></div>
     <div id="app">
       <div id="nav">
         <router-link to="/">Home</router-link> |
@@ -35,8 +36,6 @@ export default {
 
   #app {
     background: #fff;
-    /* width: 50%; */
-    padding: 30px;
     margin: auto;
     height: calc(60% - 50px);
   }
