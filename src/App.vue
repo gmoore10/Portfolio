@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <div id="animate" style="position: absolute; z-index: 1000; top: 50%; left: 50%;"></div>
     <div id="app">
       <div id="nav">
         <router-link to="/">Home</router-link> |
@@ -14,12 +13,25 @@
       <router-view/>
       </transition>
     </div>
+    <div id="animate" style="display: none; position: absolute; z-index: 1000; top: 50%; left: 50%;">
+      <component v-bind:is="currentSkillComponent"></component>
+    </div>
   </v-app>
 </template>
 
 <script>
+import Vue from 'vue'
+import SkillDAX from './components/SkillDAX'
+
+Vue.component('SkillDAX', SkillDAX)
+
 export default {
-  name: 'App'
+  name: 'App',
+  computed: {
+    currentSkillComponent() {
+      return this.$store.state.currentSkillComponent
+    }
+  }
 }
 </script>
 
@@ -30,9 +42,6 @@ export default {
     background-color: rgb(233, 233, 233);
     font-family: Arial, Helvetica, sans-serif;
   }
-  /* html, body {
-    height: calc(100% - 50px);
-  } */
 
   #app {
     background: #fff;
@@ -43,6 +52,32 @@ export default {
   .page {
     position: absolute;
     width: inherit;
+  }
+
+  .no-padding {
+    padding: 0 !important;
+  }
+
+  #animate {
+    border-top: 6px solid #1976d2;
+    border-left: 1px solid #1976d2;
+    border-right: 1px solid #1976d2;
+    border-bottom: 6px solid #1976d2;
+    border-radius: 6px;
+  }
+  .skillsLeft {
+    margin: 0 auto;
+    height: 100%;
+  }
+  .skillsRight {
+    margin: 0 auto;
+    height: 100%;
+  }
+  .center-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 </style>
 
