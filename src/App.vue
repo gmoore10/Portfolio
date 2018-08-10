@@ -13,7 +13,7 @@
       <router-view/>
       </transition>
     </div>
-    <div id="animate" style="display: none; position: absolute; z-index: 1000; top: 50%; left: 50%;">
+    <div id="animate" style="visibility: visible; position: absolute; z-index: 1000; top: 50%; left: 50%;">
       <component v-bind:is="currentSkillComponent"></component>
     </div>
   </v-app>
@@ -31,6 +31,14 @@ export default {
     currentSkillComponent() {
       return this.$store.state.currentSkillComponent
     }
+  },
+  mounted () {
+    this.$nextTick(() => {
+      window.addEventListener('resize', () => {
+        this.$store.state.windowHeight = window.innerHeight
+        this.$store.state.windowWidth = window.innerWidth
+      })
+    })
   }
 }
 </script>
