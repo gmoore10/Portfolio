@@ -13,7 +13,7 @@
       <router-view/>
       </transition>
     </div>
-    <div id="animate" style="visibility: visible; position: absolute; z-index: 1000; top: 50%; left: 50%;">
+    <div id="animate" style="display: none; position: absolute; z-index: 1000; top: 50%; left: 50%;">
       <component v-bind:is="currentSkillComponent"></component>
     </div>
   </v-app>
@@ -21,9 +21,49 @@
 
 <script>
 import Vue from 'vue'
+import SkillCrystalReports from './components/SkillCrystalReports'
+import SkillCSharp from './components/SkillCSharp'
+import SkillCSS from './components/SkillCSS'
 import SkillDAX from './components/SkillDAX'
+import SkillDotNetCore2x from './components/SkillDotNetCore2x'
+import SkillEFCore2x from './components/SkillEFCore2x'
+import SkillFormulaLanguages from './components/SkillFormulaLanguages'
+import SkillFunctions from './components/SkillFunctions'
+import SkillHTML from './components/SkillHTML'
+import SkillJavaScript from './components/SkillJavaScript'
+import SkillMicrosoftSQLServer from './components/SkillMicrosoftSQLServer'
+import SkillMySQL from './components/SkillMySQL'
+import SkillNodeJS from './components/SkillNodeJS'
+import SkillPowerBI from './components/SkillPowerBI'
+import SkillPowerQuery from './components/SkillPowerQuery'
+import SkillSequelize from './components/SkillSequelize'
+import SkillSSAS from './components/SkillSSAS'
+import SkillSSRS from './components/SkillSSRS'
+import SkillTableau from './components/SkillTableau'
+import SkillTSQL from './components/SkillTSQL'
+import SkillVueJS from './components/SkillVueJS'
 
+Vue.component('SkillCrystalReports', SkillCrystalReports)
+Vue.component('SkillCSharp', SkillCSharp)
+Vue.component('SkillCSS', SkillCSS)
 Vue.component('SkillDAX', SkillDAX)
+Vue.component('SkillDotNetCore2x', SkillDotNetCore2x)
+Vue.component('SkillEFCore2x', SkillEFCore2x)
+Vue.component('SkillFormulaLanguages', SkillFormulaLanguages)
+Vue.component('SkillFunctions', SkillFunctions)
+Vue.component('SkillHTML', SkillHTML)
+Vue.component('SkillJavaScript', SkillJavaScript)
+Vue.component('SkillMicrosoftSQLServer', SkillMicrosoftSQLServer)
+Vue.component('SkillMySQL', SkillMySQL)
+Vue.component('SkillNodeJS', SkillNodeJS)
+Vue.component('SkillPowerBI', SkillPowerBI)
+Vue.component('SkillPowerQuery', SkillPowerQuery)
+Vue.component('SkillSequelize', SkillSequelize)
+Vue.component('SkillSSAS', SkillSSAS)
+Vue.component('SkillSSRS', SkillSSRS)
+Vue.component('SkillTableau', SkillTableau)
+Vue.component('SkillTSQL', SkillTSQL)
+Vue.component('SkillVueJS', SkillVueJS)
 
 export default {
   name: 'App',

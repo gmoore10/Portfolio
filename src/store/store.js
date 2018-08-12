@@ -14,6 +14,9 @@ export const store = new Vuex.Store({
             const windowWidth = state.windowWidth;
             const windowHeight = state.windowHeight;
             return { windowWidth, windowHeight }
+        },
+        getCurrentSkillComponent: state => {
+            return state.currentSkillComponent
         }
     },
     mutations: {

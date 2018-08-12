@@ -92,20 +92,18 @@
 </template>
 
 <script>
-import { TweenLite, TimelineLite } from 'gsap'
-
-const WINDOW_WIDTH = 0;
-const WINDOW_HEIGHT = 1;
+import { TimelineLite, TweenLite } from 'gsap'
 
 export default {
   name: 'Skills',
   methods: {
     animateIt (sender) {
       const that = this
-      const t1 = new TimelineMax()
+      const t1 = new TimelineLite()
       t1.to('#animate', 0.001, {
         left: sender.clientX + 'px',
         top: sender.clientY + 'px',
+        display: 'block'
       })
       .to('#animate', 0.25, {
         width: '95vw',
