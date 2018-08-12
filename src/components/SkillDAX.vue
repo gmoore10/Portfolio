@@ -2,9 +2,9 @@
   <v-container id="skillsContainer" style="opacity: 0" skill fluid no-padding fill-height>
     <v-layout row no-padding fill-height>
       <v-flex xs6 fill-height>
-        <v-card dark tile flat height="100%" color="white">
-          <v-card-text style="color: black" id="skillsFeature">
-            <v-card-media src="/img/skills/SkillDAX.png"></v-card-media>
+        <v-card dark tile flat height="100%" color="white" style="overflow: hidden">
+          <v-card-text style="color: black;" id="skillsFeature">
+            <img id="skillImageff" src="../assets/SkillDAX.png" style="width: 100%;">
           </v-card-text>
         </v-card>
       </v-flex>
