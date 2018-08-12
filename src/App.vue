@@ -33,11 +33,10 @@ export default {
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      window.addEventListener('resize', () => {
-        this.$store.state.windowHeight = window.innerHeight
-        this.$store.state.windowWidth = window.innerWidth
-      })
+    this.$store.commit('saveWindowSize')
+
+    window.addEventListener('resize', () => {
+      this.$store.commit('saveWindowSize')
     })
   }
 }

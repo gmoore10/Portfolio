@@ -16,6 +16,9 @@
 </template>
 <script>
 export default {
-  name: 'SkillExample'
+  name: 'SkillExample',
+  mounted () {
+    
+  }
 }
 </script>
