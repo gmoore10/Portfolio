@@ -1,22 +1,15 @@
 <template>
-  <v-app>
-    <div id="app">
-      <div id="nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/projects">Projects</router-link> |
-        <router-link to="/skills">Skills</router-link> |
-        <router-link to="/contact">Contact</router-link>
-      </div>
-      <transition name="router-anim"
-                  enter-active-class="animated fadeIn"
-                  leave-active-class="animated fadeOut">
+  <div id="app">
+    <v-app light>
+      <v-toolbar class="white">
+        <v-toolbar-title>test</v-toolbar-title>
+      </v-toolbar>
       <router-view/>
-      </transition>
-    </div>
-    <div id="animate" style="display: none; position: absolute; z-index: 1000; top: 50%; left: 50%;">
-      <component v-bind:is="currentSkillComponent"></component>
-    </div>
-  </v-app>
+      <div id="animate" style="display: none; position: absolute; z-index: 1000; top: 50%; left: 50%;">
+        <component v-bind:is="currentSkillComponent"></component>
+      </div>
+    </v-app>
+  </div>
 </template>
 
 <script>
