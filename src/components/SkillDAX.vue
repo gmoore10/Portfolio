@@ -4,7 +4,7 @@
       <v-flex xs6 fill-height>
         <v-card dark tile flat height="100%" color="white" style="overflow: hidden">
           <v-card-text style="color: black;" id="skillsFeature">
-            <img id="skillImageff" src="../assets/SkillDAX.png" style="width: 100%;">
+            <img id="skillImage" src="../assets/SkillDAX.png" style="width: 100%;">
           </v-card-text>
         </v-card>
       </v-flex>
@@ -34,13 +34,5 @@ export default {
 </script>
 
 <style>
-.DAXGreenText {
-  color: teal;
-}
-.DAXBlueText {
-  color: blue;
-}
-.DAXBlackText {
-  color: black;
-}
+
 </style>
