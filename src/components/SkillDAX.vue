@@ -17,7 +17,6 @@
   </v-container>
 </template>
 <script>
-import { TextPlugin } from 'gsap/TextPlugin'
 export default {
   name: 'SkillDAX',
   methods: {
