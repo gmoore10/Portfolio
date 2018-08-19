@@ -78,14 +78,11 @@
             text-color="white">NodeJS</v-chip>
         </td>
         <td>
-          <v-chip label color="green"
+          <v-chip color="green"
             @click="animateIt"
-            id="SkillFunctions"
-            text-color="white">Functions</v-chip>
-          <v-chip label color="green"
-            @click="animateIt"
-            id="SkillReportLogic"
-            text-color="white">Report Logic</v-chip>
+            class="trap"
+            id="SkillFormulaLanguages"
+            text-color="white"><div class="innertrap">Formula Languages</div></v-chip>
         </td>
         <td>
           <v-chip color="green"
