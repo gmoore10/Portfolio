@@ -11,6 +11,7 @@
       <v-flex xs6 skillsright center-text>
         <v-card dark tile flat height="100%" class="center-text" color="primary">
           <v-card-text class="center-text">DAX</v-card-text>
+          <v-card-text class="block center-text">Test</v-card-text>
         </v-card>
       </v-flex>
     </v-layout>
@@ -33,5 +34,7 @@ export default {
 </script>
 
 <style>
-
+.block {
+  display: block;
+}
 </style>

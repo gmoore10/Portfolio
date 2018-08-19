@@ -1,5 +1,103 @@
 <template>
-  <div class="skills page" style="position: relative">
+<v-content>
+  <section>
+    <v-parallax :src="require('@/assets/ExampleConspectus_light.png')" height="600">
+          <v-layout
+            column
+            align-center
+            justify-center
+            class="white--text"
+          >
+          <v-avatar
+            size="125"
+            color="grey lighten-4"
+          >
+            <img src="../assets/me.jpg" alt="avatar">
+          </v-avatar>
+            <h1 class="black--text mb-2 display-1 text-xs-center">Garrett Moore</h1>
+            <div class="black--text subheading mb-3 text-xs-center">Developer/Designer/Data Architect</div>
+          </v-layout>
+</v-parallax>
+  </section>
+  <section>
+    <v-layout
+          column
+          wrap
+          primary
+          white--text
+          align-center
+        >
+          <v-flex xs12 sm4 class="my-3">
+            <div class="text-xs-center">
+              <h2 class="headline">Example Projects</h2>
+              <span class="subheading">
+                Check out some of my past work below
+              </span>
+            </div>
+          </v-flex>
+          <v-flex xs12>
+            <v-container grid-list-xl>
+              <v-layout row wrap align-center>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline white--text text-xs-center">Vastara Systems</div>
+                    </v-card-title>
+                    <v-card-text class="white--text">
+                      Marketing website revolving around data management for collection-based services such as 
+                      surveys or forms.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="blue--text text--lighten-2">flash_on</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline white--text">Dollars and Sense</div>
+                    </v-card-title>
+                    <v-card-text class="white--text">
+                      Built to handle your budget, this example showcases the Vue JS single page application framework.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="blue--text text--lighten-2">build</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline white--text text-xs-center">Events Dashboard</div>
+                    </v-card-title>
+                    <v-card-text class="white--text">
+                      Built to show high-level analysis of attendees to a private event, this dashboard showcases
+                      attendance, sales conversions, movement through a sales funnel and demographics in an 
+                      easy-to-use dashboard.
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-flex>
+</v-layout>
+  </section>
+  <section>
+    <v-layout
+          column
+          wrap
+          align-center
+        >
+    <v-flex xs12 sm4 class="my-3">
+            <div class="text-xs-center">
+              <h2 class="headline">My Skills</h2>
+              <span class="subheading">
+                Click on any skill below to see an example of my work and gain some insight on
+                the benefits and drawbacks of each technology.
+              </span>
+            </div>
+          </v-flex>
+    <div class="skills page" style="position: relative">
     <table id="skillsTable">
       <tr>
         <th></th>
@@ -158,13 +256,16 @@
       </tr>
     </table>
   </div>
+  </v-layout>
+  </section>
+</v-content>
 </template>
 
 <script>
 import { TimelineLite, TweenLite } from 'gsap'
 
 export default {
-  name: 'Skills',
+  name: 'Main',
   methods: {
     animateIt (sender) {
       const that = this

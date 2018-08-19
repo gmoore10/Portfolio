@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <v-app light>
-      <v-toolbar class="white">
-        <v-toolbar-title>test</v-toolbar-title>
+    <v-app>
+      <v-toolbar dark color="primary">
+        <v-toolbar-title>Garrett Moore</v-toolbar-title>
       </v-toolbar>
       <router-view/>
       <div id="animate" style="display: none; position: absolute; z-index: 1000; top: 50%; left: 50%;">
