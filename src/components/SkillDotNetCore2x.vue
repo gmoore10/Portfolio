@@ -8,10 +8,15 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 skillsright center-text>
-        <v-card dark tile flat height="100%" class="center-text" color="primary">
+      <v-flex xs6 green center-text>
+        <v-card dark tile flat height="100%" class="center-text" color="green">
           <v-card-text class="center-text">.NET Core 2.x</v-card-text>
         </v-card>
+      </v-flex>
+      <v-flex green style="padding-right: 10px;">
+        <v-chip color="green"
+            @click="closeSkill"
+            text-color="white">X</v-chip>
       </v-flex>
     </v-layout>
   </v-container>
@@ -19,8 +24,18 @@
 <script>
 export default {
   name: 'SkillDotNetCore2x',
+  methods: {
+    animateIt () {
+      TweenLite.to('#skillsContainer', 0.25, {
+          opacity: 1
+      })
+    },
+    closeSkill () {
+      this.$store.state.currentSkillComponent = ''
+    }
+  },
   mounted () {
-    
+    this.animateIt()
   }
 }
 </script>

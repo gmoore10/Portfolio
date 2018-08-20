@@ -14,8 +14,8 @@
           >
             <img src="../assets/me.jpg" alt="avatar">
           </v-avatar>
-            <h1 class="black--text mb-2 display-1 text-xs-center">Garrett Moore</h1>
-            <div class="black--text subheading mb-3 text-xs-center">Developer/Designer/Data Architect</div>
+            <h1 class="primary--text mb-2 display-1 text-xs-center">Garrett Moore</h1>
+            <div class="primary--text subheading mb-3 text-xs-center">Developer/Designer/Data Architect</div>
           </v-layout>
 </v-parallax>
   </section>
@@ -90,8 +90,8 @@
         >
     <v-flex xs12 sm4 class="my-3">
             <div class="text-xs-center">
-              <h2 class="headline">My Skills</h2>
-              <span class="subheading">
+              <h2 class="primary--text headline">My Skills</h2>
+              <span class="primary--text subheading">
                 Click on any skill below to see an example of my work and gain some insight on
                 the benefits and drawbacks of each technology.
               </span>
@@ -266,13 +266,17 @@ import { TimelineLite, TweenLite } from 'gsap'
 
 export default {
   name: 'Main',
+  data: {
+    animation: ''
+  },
   methods: {
     animateIt (sender) {
       const that = this
-      const t1 = new TimelineLite()
-      t1.to('#animate', 0.001, {
+      console.log(sender)
+      that.animation = new TimelineLite()
+      that.animation.to('#animate', 0.001, {
         left: sender.clientX + 'px',
-        top: sender.clientY + 'px',
+        top: sender.clientY + this.$store.getters.getCurrentScrollPosition + 'px',
         display: 'block'
       })
       .to('#animate', 0.25, {
@@ -281,7 +285,7 @@ export default {
         backgroundColor: '#1976d2',
       })
         .to('#animate', 0.25, {
-        top: this.$store.getters.getWindowSize.windowHeight * 0.025 + 'px',
+        top: (this.$store.getters.getWindowSize.windowHeight * 0.025) + this.$store.getters.getCurrentScrollPosition + 'px',
         left: this.$store.getters.getWindowSize.windowWidth * 0.025 + 'px',
       }, '-= 0.25')
       .add( function() {
@@ -296,7 +300,18 @@ export default {
     renderComponent (id) {
       this.$store.state.currentSkillComponent = id
       const windowSize = this.$store.getters.getWindowSize
-      console.log(windowSize.windowHeight)
+    }
+  },
+  computed: {
+    currentSkill () {
+      return this.$store.getters.getCurrentSkillComponent
+    }
+  },
+  watch: {
+    currentSkill(value) {
+      if(value === '') {
+        this.animation.reverse()
+      }
     }
   },
   mounted () {

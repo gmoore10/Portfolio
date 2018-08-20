@@ -13,14 +13,29 @@
           <v-card-text class="center-text">Entity Framework Core 2.x</v-card-text>
         </v-card>
       </v-flex>
+      <v-flex orange style="padding-right: 10px;">
+        <v-chip color="orange"
+            @click="closeSkill"
+            text-color="white">X</v-chip>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>
 <script>
 export default {
   name: 'SkillEFCore2x',
+  methods: {
+    animateIt () {
+      TweenLite.to('#skillsContainer', 0.25, {
+          opacity: 1
+      })
+    },
+    closeSkill () {
+      this.$store.state.currentSkillComponent = ''
+    }
+  },
   mounted () {
-    
+    this.animateIt()
   }
 }
 </script>

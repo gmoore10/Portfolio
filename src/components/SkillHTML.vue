@@ -13,6 +13,11 @@
           <v-card-text class="center-text">HTML</v-card-text>
         </v-card>
       </v-flex>
+      <v-flex primary style="padding-right: 10px;">
+        <v-chip color="primary"
+            @click="closeSkill"
+            text-color="white">X</v-chip>
+      </v-flex>
     </v-layout>
   </v-container>
 </template>
@@ -24,6 +29,9 @@ export default {
       TweenLite.to('#skillsContainer', 0.25, {
           opacity: 1
       })
+    },
+    closeSkill () {
+      this.$store.state.currentSkillComponent = ''
     }
   },
   mounted () {

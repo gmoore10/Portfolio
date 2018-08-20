@@ -8,11 +8,16 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 skillsright center-text>
-        <v-card dark tile flat height="100%" class="center-text" color="primary">
+      <v-flex xs6 center-text orange>
+        <v-card dark tile flat height="100%" class="center-text" color="orange">
           <v-card-text class="center-text">DAX</v-card-text>
-          <v-card-text class="block center-text">Test</v-card-text>
+          <v-card-text class="block">Test</v-card-text>
         </v-card>
+      </v-flex>
+      <v-flex orange style="padding-right: 10px;">
+        <v-chip color="orange"
+            @click="closeSkill"
+            text-color="white">X</v-chip>
       </v-flex>
     </v-layout>
   </v-container>
@@ -25,6 +30,9 @@ export default {
       TweenLite.to('#skillsContainer', 0.25, {
           opacity: 1
       })
+    },
+    closeSkill () {
+      this.$store.state.currentSkillComponent = ''
     }
   },
   mounted () {

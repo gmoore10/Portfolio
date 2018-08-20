@@ -19,8 +19,18 @@
 <script>
 export default {
   name: 'SkillFunctions',
+  methods: {
+    animateIt () {
+      TweenLite.to('#skillsContainer', 0.25, {
+          opacity: 1
+      })
+    },
+    closeSkill () {
+      this.$store.state.currentSkillComponent = ''
+    }
+  },
   mounted () {
-    
+    this.animateIt()
   }
 }
 </script>

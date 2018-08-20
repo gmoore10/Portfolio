@@ -71,6 +71,9 @@ export default {
     window.addEventListener('resize', () => {
       this.$store.commit('saveWindowSize')
     })
+
+    window.addEventListener('scroll', () => {
+      this.$store.commit('saveScrollPosition') })
   }
 }
 </script>
