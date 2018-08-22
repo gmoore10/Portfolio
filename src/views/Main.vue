@@ -1,7 +1,7 @@
 <template>
 <v-content>
   <section>
-    <v-parallax :src="require('@/assets/ExampleConspectus_light.png')" height="600">
+    <v-parallax :src="require('@/assets/ExampleConspectus_light.png')" height="700">
           <v-layout
             column
             align-center
@@ -82,7 +82,7 @@
           </v-flex>
 </v-layout>
   </section>
-  <section>
+  <section style="padding-top: 10px; padding-bottom: 20px;">
     <v-layout
           column
           wrap

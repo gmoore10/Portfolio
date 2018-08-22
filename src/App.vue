@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <v-app>
+      <router-view/>
       <v-toolbar dark color="primary">
         <v-toolbar-title>Garrett Moore</v-toolbar-title>
       </v-toolbar>
-      <router-view/>
       <div id="animate" style="display: none; position: absolute; z-index: 1000; top: 50%; left: 50%;">
         <component v-bind:is="currentSkillComponent"></component>
       </div>
