@@ -8,9 +8,29 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 skillsright center-text>
+      <v-flex xs6 center-text>
         <v-card dark tile flat height="100%" class="center-text" color="primary">
-          <v-card-text class="center-text">JavaScript</v-card-text>
+          <v-container>
+            <v-layout row>
+              <v-card-text class="center-text display-2">JavaScript</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                JavaScript is the most popular interpreted scripting language
+                available for web browsers today. While it has Java in the name,
+                it is not related to the Java language in any way. JavaScript enables
+                interactivity on web pages and is considered an integral part of web
+                development.
+              </v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                Many versions of JavaScript exist, not all of which are universally adopted.
+                Because of this, transpilers must be used for newer revisions of JavaScript 
+                to ensure compatibility with all modern browsers.
+              </v-card-text>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
       <v-flex primary style="padding-right: 10px;">

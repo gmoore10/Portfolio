@@ -8,9 +8,30 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 skillsright center-text>
+      <v-flex xs6 center-text>
         <v-card dark tile flat height="100%" class="center-text" color="primary">
-          <v-card-text class="center-text">Power BI</v-card-text>
+          <v-container>
+            <v-layout row>
+              <v-card-text class="center-text display-2">Power BI</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                Power BI is an analysis tool designed to provide reporting in primarily
+                a visual format. Unlike its sister product, SSRS, it is not designed
+                for printing reports or for pixel-perfect reporting where design is
+                key. Power BI can consume a variety of data sources using the Power Query
+                engine and can work with massive amounts of data (1 billion+ records).
+              </v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                Power BI's underlying data engine is nearly identical to its enterprise 
+                cousin, SQL Server Analysis Services. It utilizes the DAX query engine
+                to manipulate data prior to displaying it and can also take advantage
+                of the M query language for advanced consumption of data sources.
+              </v-card-text>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
       <v-flex primary style="padding-right: 10px;">

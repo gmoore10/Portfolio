@@ -8,9 +8,27 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 skillsright center-text>
-        <v-card dark tile flat height="100%" class="center-text" color="primary">
-          <v-card-text class="center-text">Microsoft SQL Server</v-card-text>
+      <v-flex xs6 center-text red>
+        <v-card dark tile flat height="100%" class="center-text" color="red">
+          <v-container>
+            <v-layout row>
+              <v-card-text class="center-text display-2">Microsoft SQL Server</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                Microsoft's SQL Server is a relational database platform built for the enterprise.
+                It contains many features common amongst its competitors while also containing a 
+                variety of features built for small, medium and large corporations.
+              </v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                While a free version exists, it is hampered by limited memory usage and 
+                a relatively small maximum database size. If a free RDBMS system is required,
+                consider MySQL or PostreSQL instead.
+              </v-card-text>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
       <v-flex red style="padding-right: 10px;">

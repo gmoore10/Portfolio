@@ -8,9 +8,31 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 skillsright center-text>
-        <v-card dark tile flat height="100%" class="center-text" color="primary">
-          <v-card-text class="center-text">T-SQL</v-card-text>
+      <v-flex xs6 center-text orange>
+        <v-card dark tile flat height="100%" class="center-text" color="orange">
+          <v-container>
+            <v-layout row>
+              <v-card-text class="center-text display-2">T-SQL</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text class="no-padding">Transact SQL</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                T-SQL is Microsoft's flavor of SQL used to query its SQL Server database
+                engine. T-SQL is an old, mature data querying procedural language that 
+                allows for very complex queries to be written to achieve desired data sets.
+              </v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                T-SQL queries can be many thousands of lines long, or in the case of 
+                vendor applications, can be millions of lines long. T-SQL is not object-oriented
+                which means that all code written in SQL is run in the order that it was written
+                in (with the exception of GOTO statements).
+              </v-card-text>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
       <v-flex orange style="padding-right: 10px;">

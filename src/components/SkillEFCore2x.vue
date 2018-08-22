@@ -4,13 +4,37 @@
       <v-flex xs6 fill-height>
         <v-card dark tile flat height="100%" color="white" style="overflow: hidden">
           <v-card-text style="color: black;" id="skillsFeature">
-            <img id="skillImage" src="../assets/SkillDotNetCore2x.png" style="width: 100%;">
+            <img id="skillImage" src="../assets/SkillEFCore2x.png" style="width: 100%;">
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 skillsright center-text>
-        <v-card dark tile flat height="100%" class="center-text" color="primary">
-          <v-card-text class="center-text">Entity Framework Core 2.x</v-card-text>
+      <v-flex xs6 center-text orange>
+        <v-card dark tile flat height="100%" class="center-text" color="orange">
+          <v-container>
+            <v-layout row>
+              <v-card-text class="center-text display-2">EF Core 2.x</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text class="no-padding">Entity Framework Core</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                EF Core 2.x is an object relational mapper built for use in .NET Core 2.x
+                to develop against a variety of relational and non-relational database
+                engines. Object relational mappers allow for LOB application code to access
+                data sources in a consistent, repeatable pattern regardless of what the
+                underlying data engine is.
+              </v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                EF Core 2.x uses a query language called Linq that is standardized across all
+                data sources. This allows developers to only have to learn the query language
+                once and facilitates the use of multiple storage engines providing flexibility
+                to the application being developed.
+              </v-card-text>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
       <v-flex orange style="padding-right: 10px;">

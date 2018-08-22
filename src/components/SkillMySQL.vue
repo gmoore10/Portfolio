@@ -8,9 +8,28 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 skillsright center-text>
-        <v-card dark tile flat height="100%" class="center-text" color="primary">
-          <v-card-text class="center-text">MySQL</v-card-text>
+      <v-flex xs6 center-text red>
+        <v-card dark tile flat height="100%" class="center-text" color="red">
+          <v-container>
+            <v-layout row>
+              <v-card-text class="center-text display-2">MySQL</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                MySQL is a relational database management system that facilitates row based
+                storage of data sets into tables. It also provides a means to query and manipulate
+                data sets to gleam useful information out of or store data provided by end users
+                or an automated process.
+              </v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                MySQL has many competitors and each have their own unique set of features. 
+                While MySQL is free, it has major backing and funding from Oracle. MySQL 
+                has paid enterprise options in addition to its free version.
+              </v-card-text>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
       <v-flex red style="padding-right: 10px;">

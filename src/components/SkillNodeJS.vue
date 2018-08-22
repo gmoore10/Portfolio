@@ -8,9 +8,30 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 skillsright center-text>
-        <v-card dark tile flat height="100%" class="center-text" color="primary">
-          <v-card-text class="center-text">NodeJS</v-card-text>
+      <v-flex xs6 center-text green>
+        <v-card dark tile flat height="100%" class="center-text" color="green">
+          <v-container>
+            <v-layout row>
+              <v-card-text class="center-text display-2">NodeJS</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                NodeJS is a server-based implementation of the ES5/ES6 versions of the
+                JavaScript programming language. It is designed to run as a backend server
+                language that can access data and run logic in ways similar to PHP, C# and
+                other languages only known for this feature.
+              </v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                NodeJS is uniquely positioned for quick adoption due to it using the 
+                highly-adopted and unversially-understood JavaScript programming language.
+                NodeJS is free and open-source. In its base form, it contains about as
+                much functionality as C. However after adding a few packages to a project
+                it can run as a full web server.
+              </v-card-text>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
       <v-flex green style="padding-right: 10px;">

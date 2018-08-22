@@ -8,9 +8,30 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 skillsright center-text>
-        <v-card dark tile flat height="100%" class="center-text" color="primary">
-          <v-card-text class="center-text">C#</v-card-text>
+      <v-flex xs6 center-text green>
+        <v-card dark tile flat height="100%" class="center-text" color="green">
+          <v-container>
+            <v-layout row>
+              <v-card-text class="center-text display-2">C#</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                C# is a programming language developed by Microsoft and used in their
+                suite of .NET products including .NET Framework and .NET Core. C# is 
+                a compiled language that gets its roots from the C language. It contains
+                many similarities to Java while retaining its own unique implementation 
+                of features. It recently became cross-platform with the introduction 
+                of .NET Core.
+              </v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                C# is one of several 1st class programming languages available in .NET.
+                The others include VB and F#, all of which are compiled down to the same
+                intermediate language and then packaged into .DLL files for portability.
+              </v-card-text>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
       <v-flex green style="padding-right: 10px;">

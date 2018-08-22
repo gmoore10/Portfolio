@@ -8,9 +8,31 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 skillsright center-text>
+      <v-flex xs6 center-text>
         <v-card dark tile flat height="100%" class="center-text" color="primary">
-          <v-card-text class="center-text">Tableau</v-card-text>
+          <v-container>
+            <v-layout row>
+              <v-card-text class="center-text display-2">Tableau</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                Tableau is a reporting tool that is designed to present information
+                from data sources primarily in a visual or tabular format. It can consumes
+                massive datasets and contains a powerful formula engine that allows for
+                advanced functions to be applied to data. It also contains a full visual 
+                rendering engine that allows for completely customized visual not available
+                out-of-box.
+              </v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                Tableau's primary competitor is Microsoft's Power BI. Many features are similar,
+                but Power BI has a unique feature in that custom visualizations can be created
+                and distributed via its community of users. Tableau requires every custom visualization
+                to be rebuilt in every report/dashboard designed.
+              </v-card-text>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
       <v-flex primary style="padding-right: 10px;">

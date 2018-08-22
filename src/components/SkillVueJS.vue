@@ -8,9 +8,29 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 skillsright center-text>
+      <v-flex xs6 center-text>
         <v-card dark tile flat height="100%" class="center-text" color="primary">
-          <v-card-text class="center-text">Vue JS</v-card-text>
+          <v-container>
+            <v-layout row>
+              <v-card-text class="center-text display-2">VueJS</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                VueJS is a web application framework that runs on top of JavaScript to provide
+                a more advanced web rendering engine that incorporates modern programming techniques
+                such as separation of concerns, precompiling of resources, unit testing and code 
+                validation when used with the commandline interface. VueJS can be used to run
+                and entire website or can be included on individual pages when needed.
+              </v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                VueJS has many competitors, including Angular and ReactJS, each with their own
+                advantages and drawbacks. However, as of 2018, VueJS is considered by many to be the fastest
+                renderer compared to its competition.
+              </v-card-text>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
       <v-flex primary style="padding-right: 10px;">

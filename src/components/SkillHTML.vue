@@ -8,9 +8,23 @@
           </v-card-text>
         </v-card>
       </v-flex>
-      <v-flex xs6 skillsright center-text>
+      <v-flex xs6 center-text primary>
         <v-card dark tile flat height="100%" class="center-text" color="primary">
-          <v-card-text class="center-text">HTML</v-card-text>
+          <v-container>
+            <v-layout row>
+              <v-card-text class="center-text display-2">HTML</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text class="no-padding">Hypertext Markup Language</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                HTML is the standard markup language for creating web pages that can be rendered in
+                a browser. Based on XML, it is one of the oldest markup languages still in use on 
+                the internet.
+              </v-card-text>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
       <v-flex primary style="padding-right: 10px;">

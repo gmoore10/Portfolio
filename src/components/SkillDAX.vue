@@ -10,8 +10,28 @@
       </v-flex>
       <v-flex xs6 center-text orange>
         <v-card dark tile flat height="100%" class="center-text" color="orange">
-          <v-card-text class="center-text">DAX</v-card-text>
-          <v-card-text class="block">Test</v-card-text>
+          <v-container>
+            <v-layout row>
+              <v-card-text class="center-text display-2">DAX</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text class="no-padding">Data Analysis Expressions</v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                The DAX expression language is used to query both Power BI data sources and SQL Server Analysis Services data sources.
+                The language is specfically designed to aggregate very large data sets (billions of rows) very quickly against in memory data sources.
+              </v-card-text>
+            </v-layout>
+            <v-layout row>
+              <v-card-text>
+                This particular query language is not suited for returning large amounts of records 
+                due to how the underlying columnstore engine is designed. If you are looking to return 
+                large data sets in a row-by-row fashion, consider T-SQL and a row-based storage 
+                engine such as MySQL, Microsoft SQL Server or PostreSQL.
+              </v-card-text>
+            </v-layout>
+          </v-container>
         </v-card>
       </v-flex>
       <v-flex orange style="padding-right: 10px;">
@@ -44,5 +64,8 @@ export default {
 <style>
 .block {
   display: block;
+}
+.no-padding {
+  padding: 0px !important;
 }
 </style>
