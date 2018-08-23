@@ -40,44 +40,42 @@
           <v-flex xs12>
             <v-container grid-list-xl>
               <v-layout row wrap align-center>
-                <v-flex xs12 md4>
+                <v-flex s12 lg4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <img src="../assets/ExampleVastara.png" style="width: 400px; height: 250px;" alt="" />
+                      <img src="../assets/ExampleVastara.png" style="width: 350px; height: 225px;" alt="" />
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline white--text text-xs-center"><a href="http://137.117.93.108/vastara/" style="color: white" target="_blank">Vastara</a></div>
                     </v-card-title>
                     <v-card-text class="white--text">
-                      Marketing website revolving around data management for collection-based services such as 
-                      surveys or forms.
+                      A responsive marketing website
                     </v-card-text>
                   </v-card>
                 </v-flex>
-                <v-flex xs12 md4>
+                <v-flex s12 lg4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <img src="../assets/ExampleDollarsAndSense.png" style="width: 400px; height: 250px;" alt="" />
+                      <img src="../assets/ExampleDollarsAndSense.png" style="width: 350px; height: 225px;" alt="" />
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline white--text text-xs-center"><a href="http://45.32.223.115/" style="color: white" target="_blank">Dollars and Sense</a></div>
                     </v-card-title>
                     <v-card-text class="white--text">
-                      Built to handle your budget, this example showcases the Vue JS single page application framework.
+                      Single Page Application with VueJS
                     </v-card-text>
                   </v-card>
                 </v-flex>
-                <v-flex xs12 md4>
+                <v-flex s12 lg4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <img src="../assets/ExampleConspectus.png" style="width: 400px; height: 250px;" alt="" />
+                      <img src="../assets/ExampleConspectus.png" style="width: 350px; height: 225px;" alt="" />
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline white--text text-xs-center"><a href="http://137.117.93.108/" style="color: white" target="_blank">Events Dashboard</a></div>
                     </v-card-title>
                     <v-card-text class="white--text">
-                      Designed to show advanced analytics of events in an easily digestible format. Shows
-                      attendance, conversion rates and demographics.
+                      Data Driven Dashboard
                     </v-card-text>
                   </v-card>
                 </v-flex>
