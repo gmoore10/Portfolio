@@ -16,6 +16,8 @@
           </v-avatar>
             <h1 class="primary--text mb-2 display-1 text-xs-center">Garrett Moore</h1>
             <div class="primary--text subheading mb-3 text-xs-center">Developer/Designer/Data Architect</div>
+            <div class="primary--text subheading mb-3 text-xs-center"><a href="https://www.linkedin.com/in/garrett-t-moore/" target="_blank">LinkedIn</a></div>
+            <div class="primary--text subheading mb-3 text-xs-center"><a href="mailto:gmoore7@gmail.com" target="_blank">Email Me</a></div>
           </v-layout>
 </v-parallax>
   </section>
