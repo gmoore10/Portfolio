@@ -40,8 +40,11 @@
               <v-layout row wrap align-center>
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
+                    <v-card-text class="text-xs-center">
+                      <img src="../assets/ExampleVastara.png" style="width: 400px; height: 250px;" alt="" />
+                    </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline white--text text-xs-center">Vastara Systems</div>
+                      <div class="headline white--text text-xs-center"><a href="http://137.117.93.108/vastara/" style="color: white" target="_blank">Vastara</a></div>
                     </v-card-title>
                     <v-card-text class="white--text">
                       Marketing website revolving around data management for collection-based services such as 
@@ -52,10 +55,10 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">flash_on</v-icon>
+                      <img src="../assets/ExampleDollarsAndSense.png" style="width: 400px; height: 250px;" alt="" />
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline white--text">Dollars and Sense</div>
+                      <div class="headline white--text text-xs-center"><a href="http://45.32.223.115/" style="color: white" target="_blank">Dollars and Sense</a></div>
                     </v-card-title>
                     <v-card-text class="white--text">
                       Built to handle your budget, this example showcases the Vue JS single page application framework.
@@ -65,15 +68,14 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">build</v-icon>
+                      <img src="../assets/ExampleConspectus.png" style="width: 400px; height: 250px;" alt="" />
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline white--text text-xs-center">Events Dashboard</div>
+                      <div class="headline white--text text-xs-center"><a href="http://137.117.93.108/" style="color: white" target="_blank">Events Dashboard</a></div>
                     </v-card-title>
                     <v-card-text class="white--text">
-                      Built to show high-level analysis of attendees to a private event, this dashboard showcases
-                      attendance, sales conversions, movement through a sales funnel and demographics in an 
-                      easy-to-use dashboard.
+                      Designed to show advanced analytics of events in an easily digestible format. Shows
+                      attendance, conversion rates and demographics.
                     </v-card-text>
                   </v-card>
                 </v-flex>
