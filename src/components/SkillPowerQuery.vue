@@ -18,7 +18,7 @@
               <v-card-text>
                 Power Query is a data access engine that can act as an "Extract-Transform-Load"
                 tool in limited says. It can ingest a data set, manipulate it by removing fields
-                or adjusted values, and then sending it off to be stored in Analysis Services or 
+                or adjusted values, and then sending it off to be stored in Analysis Services or
                 a Power BI data source.
               </v-card-text>
             </v-layout>
@@ -41,12 +41,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillPowerQuery',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

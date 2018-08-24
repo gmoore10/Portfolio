@@ -20,13 +20,13 @@
             <v-layout row>
               <v-card-text>
                 T-SQL is Microsoft's flavor of SQL used to query its SQL Server database
-                engine. T-SQL is an old, mature data querying procedural language that 
+                engine. T-SQL is an old, mature data querying procedural language that
                 allows for very complex queries to be written to achieve desired data sets.
               </v-card-text>
             </v-layout>
             <v-layout row>
               <v-card-text>
-                T-SQL queries can be many thousands of lines long, or in the case of 
+                T-SQL queries can be many thousands of lines long, or in the case of
                 vendor applications, can be millions of lines long. T-SQL is not object-oriented
                 which means that all code written in SQL is run in the order that it was written
                 in (with the exception of GOTO statements).
@@ -44,12 +44,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillTSQL',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

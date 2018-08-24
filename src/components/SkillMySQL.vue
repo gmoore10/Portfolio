@@ -24,8 +24,8 @@
             </v-layout>
             <v-layout row>
               <v-card-text>
-                MySQL has many competitors and each have their own unique set of features. 
-                While MySQL is free, it has major backing and funding from Oracle. MySQL 
+                MySQL has many competitors and each have their own unique set of features.
+                While MySQL is free, it has major backing and funding from Oracle. MySQL
                 has paid enterprise options in addition to its free version.
               </v-card-text>
             </v-layout>
@@ -41,12 +41,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillMySQL',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

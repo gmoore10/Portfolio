@@ -24,7 +24,7 @@
             </v-layout>
             <v-layout row>
               <v-card-text>
-                NodeJS is uniquely positioned for quick adoption due to it using the 
+                NodeJS is uniquely positioned for quick adoption due to it using the
                 highly-adopted and unversially-understood JavaScript programming language.
                 NodeJS is free and open-source. In its base form, it contains about as
                 much functionality as C. However after adding a few packages to a project
@@ -43,12 +43,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillNodeJS',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

@@ -17,12 +17,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillFunctions',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

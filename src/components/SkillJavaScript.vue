@@ -26,7 +26,7 @@
             <v-layout row>
               <v-card-text>
                 Many versions of JavaScript exist, not all of which are universally adopted.
-                Because of this, transpilers must be used for newer revisions of JavaScript 
+                Because of this, transpilers must be used for newer revisions of JavaScript
                 to ensure compatibility with all modern browsers.
               </v-card-text>
             </v-layout>
@@ -42,12 +42,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillJavaScript',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

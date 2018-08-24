@@ -16,24 +16,26 @@
             </v-layout>
             <v-layout row>
               <v-card-text>
-                SAP Crystal Reports is a pixel-perfect reporting tool that allows for the development
-                and consumption of paginated reports. While Crystal Reports has slowed in development
-                in recent years, it is still widely used all over the world due to having a very fast
-                underlying rendering engine and the flexibility to be included in LOB applications with
-                minimal development effort.
+                SAP Crystal Reports is a pixel-perfect reporting tool that allows for
+                the development and consumption of paginated reports. While Crystal
+                Reports has slowed in development in recent years, it is still
+                widely used all over the world due to having a very fast underlying
+                rendering engine and the flexibility to be included in LOB applications
+                with minimal development effort.
               </v-card-text>
             </v-layout>
             <v-layout row>
               <v-card-text>
-                Crystal Reports is an aging platform that SAP has begun marketing exclusively to small
-                businesses rather than large enterprises, and their licensing model reflects that.
-                Alternatives include SQL Server Reporting Services, Telerik Reporting Services and others.
+                Crystal Reports is an aging platform that SAP has begun marketing
+                exclusively to small businesses rather than large enterprises,
+                and their licensing model reflects that. Alternatives include
+                SQL Server Reporting Services, Telerik Reporting Services and others.
               </v-card-text>
             </v-layout>
             <v-layout row>
               <v-card-text>
-                If your intent is to display advanced visualizations on a dashboard, consider products such
-                as Tableau or Power BI instead.
+                If your intent is to display advanced visualizations on a dashboard, consider
+                products such as Tableau or Power BI instead.
               </v-card-text>
             </v-layout>
           </v-container>
@@ -48,12 +50,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillCrystalReports',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

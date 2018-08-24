@@ -18,7 +18,7 @@
               <v-card-text>
                 The various formula languages that are packaged with any reporting tool (Tableau,
                 SSRS, Power BI, etc.) are a valuable tool in aiding in the proper display of data
-                points on a report. They can handle simple aggregations and formatting and also 
+                points on a report. They can handle simple aggregations and formatting and also
                 work with complex window functions to help summarize data sets in meaningful ways.
               </v-card-text>
             </v-layout>
@@ -41,12 +41,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillFormulaLanguages',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

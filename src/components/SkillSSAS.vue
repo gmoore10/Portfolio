@@ -28,10 +28,11 @@
             </v-layout>
             <v-layout row>
               <v-card-text>
-                Columnstore data sources like SSAS require additional curating and optimization.
-                Because SSAS stores data in memory, only data points that are actively being used should
-                be included in the stored data set. This ensures high levels of efficiency when querying
-                large amounts of data out of this system.
+                Columnstore data sources like SSAS require additional curating and
+                optimization. Because SSAS stores data in memory, only data points
+                that are actively being used should be included in the stored data
+                set. This ensures high levels of efficiency when querying large
+                amounts of data out of this system.
               </v-card-text>
             </v-layout>
           </v-container>
@@ -46,12 +47,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillSSAS',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

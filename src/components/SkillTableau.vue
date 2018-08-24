@@ -19,7 +19,7 @@
                 Tableau is a reporting tool that is designed to present information
                 from data sources primarily in a visual or tabular format. It can consumes
                 massive datasets and contains a powerful formula engine that allows for
-                advanced functions to be applied to data. It also contains a full visual 
+                advanced functions to be applied to data. It also contains a full visual
                 rendering engine that allows for completely customized visual not available
                 out-of-box.
               </v-card-text>
@@ -28,8 +28,8 @@
               <v-card-text>
                 Tableau's primary competitor is Microsoft's Power BI. Many features are similar,
                 but Power BI has a unique feature in that custom visualizations can be created
-                and distributed via its community of users. Tableau requires every custom visualization
-                to be rebuilt in every report/dashboard designed.
+                and distributed via its community of users. Tableau requires every
+                custom visualization to be rebuilt in every report/dashboard designed.
               </v-card-text>
             </v-layout>
           </v-container>
@@ -44,12 +44,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillTableau',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

@@ -25,7 +25,7 @@
             </v-layout>
             <v-layout row>
               <v-card-text>
-                Power BI's underlying data engine is nearly identical to its enterprise 
+                Power BI's underlying data engine is nearly identical to its enterprise
                 cousin, SQL Server Analysis Services. It utilizes the DAX query engine
                 to manipulate data prior to displaying it and can also take advantage
                 of the M query language for advanced consumption of data sources.
@@ -43,12 +43,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillPowerBI',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

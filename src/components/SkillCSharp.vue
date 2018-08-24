@@ -17,10 +17,10 @@
             <v-layout row>
               <v-card-text>
                 C# is a programming language developed by Microsoft and used in their
-                suite of .NET products including .NET Framework and .NET Core. C# is 
+                suite of .NET products including .NET Framework and .NET Core. C# is
                 a compiled language that gets its roots from the C language. It contains
-                many similarities to Java while retaining its own unique implementation 
-                of features. It recently became cross-platform with the introduction 
+                many similarities to Java while retaining its own unique implementation
+                of features. It recently became cross-platform with the introduction
                 of .NET Core.
               </v-card-text>
             </v-layout>
@@ -43,12 +43,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillCSharp',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

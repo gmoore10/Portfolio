@@ -3,33 +3,38 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export const store = new Vuex.Store({
-    state: {
-        currentSkillComponent: '',
-        windowHeight: '',
-        windowWidth: '',
-        scrollYPosition: '',
+const store = new Vuex.Store({
+  state: {
+    currentSkillComponent: '',
+    windowHeight: '',
+    windowWidth: '',
+    scrollYPosition: ''
+  },
+  getters: {
+    getWindowSize: (state) => {
+      const windowWidth = state.windowWidth
+      const windowHeight = state.windowHeight
+      return {
+        windowWidth,
+        windowHeight
+      }
     },
-    getters: {
-        getWindowSize: state => {
-            const windowWidth = state.windowWidth;
-            const windowHeight = state.windowHeight;
-            return { windowWidth, windowHeight }
-        },
-        getCurrentScrollPosition: state => {
-            return state.scrollYPosition
-        },
-        getCurrentSkillComponent: state => {
-            return state.currentSkillComponent
-        }
+    getCurrentScrollPosition: (state) => {
+      const returned = state.scrollYPosition
+      return returned
     },
-    mutations: {
-        saveWindowSize() {
-            this.state.windowHeight = window.innerHeight,
-            this.state.windowWidth = window.innerWidth
-        },
-        saveScrollPosition() {
-            this.state.scrollYPosition = window.scrollY
-        }
+    getCurrentSkillComponent: (state) => {
+      const returned = state.currentSkillComponent
+      return returned
     }
+  },
+  mutations: {
+    saveWindowSize () {
+      this.state.windowHeight = window.innerHeight
+      this.state.windowWidth = window.innerWidth
+    },
+    saveScrollPosition () {
+      this.state.scrollYPosition = window.scrollY
+    }
+  }
 })

@@ -20,7 +20,7 @@
             <v-layout row>
               <v-card-text>
                 HTML is the standard markup language for creating web pages that can be rendered in
-                a browser. Based on XML, it is one of the oldest markup languages still in use on 
+                a browser. Based on XML, it is one of the oldest markup languages still in use on
                 the internet.
               </v-card-text>
             </v-layout>
@@ -36,12 +36,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillHTML',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

@@ -19,7 +19,7 @@
             </v-layout>
             <v-layout row>
               <v-card-text>
-                CSS is a markup language that provides the design of a website. It 
+                CSS is a markup language that provides the design of a website. It
                 contains all of the fonts, colors and styles that are applied to
                 a web page. CSS can be applied inline to specific HTML tags
                 (not recommended in most cases) or they can be included in the
@@ -32,7 +32,7 @@
                 the DRY (Don't Repeat Yourself) principle of programming. Because of
                 this, alternative markup such as SASS can be used in place of CSS which
                 provides features such as mixins, variables and nestable classes. While
-                browsers cannot render markup like SASS, a transpiler can be used to 
+                browsers cannot render markup like SASS, a transpiler can be used to
                 convert SASS to CSS automatically for a browser to consume.
               </v-card-text>
             </v-layout>
@@ -48,12 +48,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillCSS',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

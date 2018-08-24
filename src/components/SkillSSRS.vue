@@ -29,8 +29,8 @@
             </v-layout>
             <v-layout row>
               <v-card-text>
-                If your intent is to display advanced visualizations on a dashboard, consider products such
-                as Tableau or Power BI instead.
+                If your intent is to display advanced visualizations on a dashboard,
+                consider products such as Tableau or Power BI instead.
               </v-card-text>
             </v-layout>
           </v-container>
@@ -45,12 +45,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillSSRS',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

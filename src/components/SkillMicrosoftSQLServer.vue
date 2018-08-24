@@ -17,13 +17,13 @@
             <v-layout row>
               <v-card-text>
                 Microsoft's SQL Server is a relational database platform built for the enterprise.
-                It contains many features common amongst its competitors while also containing a 
+                It contains many features common amongst its competitors while also containing a
                 variety of features built for small, medium and large corporations.
               </v-card-text>
             </v-layout>
             <v-layout row>
               <v-card-text>
-                While a free version exists, it is hampered by limited memory usage and 
+                While a free version exists, it is hampered by limited memory usage and
                 a relatively small maximum database size. If a free RDBMS system is required,
                 consider MySQL or PostreSQL instead.
               </v-card-text>
@@ -40,12 +40,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillMicrosoftSQLServer',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {

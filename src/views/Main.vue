@@ -15,9 +15,16 @@
             <img src="../assets/me.jpg" alt="avatar">
           </v-avatar>
             <h1 class="primary--text mb-2 display-1 text-xs-center">Garrett Moore</h1>
-            <div class="primary--text subheading mb-3 text-xs-center">Developer/Designer/Data Architect</div>
-            <div class="primary--text subheading mb-3 text-xs-center"><a href="https://www.linkedin.com/in/garrett-t-moore/" target="_blank">LinkedIn</a></div>
-            <div class="primary--text subheading mb-3 text-xs-center"><a href="mailto:gmoore7@gmail.com" target="_blank">Email Me</a></div>
+            <div class="primary--text subheading mb-3 text-xs-center">
+              Developer/Designer/Data Architect
+            </div>
+            <div class="primary--text subheading mb-3 text-xs-center">
+              <a href="https://www.linkedin.com/in/garrett-t-moore/"
+                 target="_blank">LinkedIn</a>
+            </div>
+            <div class="primary--text subheading mb-3 text-xs-center">
+              <a href="mailto:gmoore7@gmail.com" target="_blank">Email Me</a>
+            </div>
           </v-layout>
 </v-parallax>
   </section>
@@ -43,7 +50,9 @@
                 <v-flex s12 lg4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <img src="../assets/ExampleVastara.png" style="width: 350px; height: 225px;" alt="" />
+                      <img src="../assets/ExampleVastara.png"
+                           style="width: 350px; height: 225px;"
+                           alt="" />
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline white--text text-xs-center"><a href="http://www.garretttmoore.com/examples/vastara/" style="color: white" target="_blank">Vastara</a></div>
@@ -56,7 +65,9 @@
                 <v-flex s12 lg4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <img src="../assets/ExampleDollarsAndSense.png" style="width: 350px; height: 225px;" alt="" />
+                      <img src="../assets/ExampleDollarsAndSense.png"
+                           style="width: 350px; height: 225px;"
+                           alt="" />
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline white--text text-xs-center"><a href="http://45.32.223.115/" style="color: white" target="_blank">Dollars and Sense</a></div>
@@ -69,7 +80,9 @@
                 <v-flex s12 lg4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <img src="../assets/ExampleConspectus.png" style="width: 350px; height: 225px;" alt="" />
+                      <img src="../assets/ExampleConspectus.png"
+                           style="width: 350px; height: 225px;"
+                           alt="" />
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
                       <div class="headline white--text text-xs-center"><a href="http://www.garretttmoore.com/examples/" style="color: white" target="_blank">Events Dashboard</a></div>
@@ -104,16 +117,22 @@
       <tr>
         <th></th>
         <th>
-          <v-chip color="blue-grey lighten-1" style="display: block; width: 100%; text-align: center"
-            text-color="white">Web</v-chip>
+          <v-chip color="blue-grey lighten-1"
+                  style="display: block; width: 100%; text-align: center"
+                  text-color="white">Web</v-chip>
         </th>
         <th>
-          <v-chip label color="blue-grey lighten-1" style="display: block; width: 100%; text-align: center"
-            text-color="white">Reporting</v-chip>
+          <v-chip label
+                  color="blue-grey lighten-1"
+                  style="display: block; width: 100%; text-align: center"
+                  text-color="white">Reporting</v-chip>
         </th>
         <th>
-          <v-chip label class="trap" color="blue-grey lighten-1" style="display: block; width: 100%; text-align: center"
-            text-color="white"><div class="innertrap">Analysis</div></v-chip>
+          <v-chip label
+                  class="trap"
+                  color="blue-grey lighten-1"
+                  style="display: block; width: 100%; text-align: center"
+                  text-color="white"><div class="innertrap">Analysis</div></v-chip>
         </th>
       </tr>
       <tr>
@@ -264,44 +283,47 @@
 </template>
 
 <script>
-import { TimelineLite, TweenLite } from 'gsap'
+import { TimelineLite } from 'gsap'
 
 export default {
   name: 'Main',
-  data: {
-    animation: ''
-  },
   methods: {
     animateIt (sender) {
       const that = this
-      console.log(sender)
       that.animation = new TimelineLite()
-      that.animation.to('#animate', 0.001, {
-        left: sender.clientX + 'px',
-        top: sender.clientY + this.$store.getters.getCurrentScrollPosition + 'px',
-        display: 'block'
-      })
-      .to('#animate', 0.25, {
-        width: '95vw',
-        height: '95vh',
-        backgroundColor: '#1976d2',
-      })
+      that.animation
+        .to('#animate', 0.001, {
+          left: `${sender.clientX}px`,
+          top:
+            `${sender.clientY + this.$store.getters.getCurrentScrollPosition}px`,
+          display: 'block'
+        })
         .to('#animate', 0.25, {
-        top: (this.$store.getters.getWindowSize.windowHeight * 0.025) + this.$store.getters.getCurrentScrollPosition + 'px',
-        left: this.$store.getters.getWindowSize.windowWidth * 0.025 + 'px',
-      }, '-= 0.25')
-      .add( function() {
-        console.log(sender.target.parentNode)
-        if(sender.target.parentNode.id === "") {
-          that.renderComponent(sender.target.parentNode.parentNode.id)
-        } else {
-          that.renderComponent(sender.target.parentNode.id)
-        }
-      })
+          width: '95vw',
+          height: '95vh',
+          backgroundColor: '#1976d2'
+        })
+        .to(
+          '#animate',
+          0.25,
+          {
+            top:
+              `${(this.$store.getters.getWindowSize.windowHeight * 0.025) +
+              this.$store.getters.getCurrentScrollPosition}px`,
+            left: `${this.$store.getters.getWindowSize.windowWidth * 0.025}px`
+          },
+          '-= 0.25'
+        )
+        .add(() => {
+          if (sender.target.parentNode.id === '') {
+            that.renderComponent(sender.target.parentNode.parentNode.id)
+          } else {
+            that.renderComponent(sender.target.parentNode.id)
+          }
+        })
     },
     renderComponent (id) {
       this.$store.state.currentSkillComponent = id
-      const windowSize = this.$store.getters.getWindowSize
     }
   },
   computed: {
@@ -310,19 +332,17 @@ export default {
     }
   },
   watch: {
-    currentSkill(value) {
-      if(value === '') {
+    currentSkill (value) {
+      if (value === '') {
         this.animation.reverse()
       }
     }
   },
-  mounted () {
-  }
+  mounted () {}
 }
 </script>
 
 <style>
-
 #skillsTable > tr > td:first-child {
   min-width: 110px;
 }
@@ -361,7 +381,7 @@ export default {
 
 .trap {
   -webkit-transform: skew(20deg);
-  -moz-transform: skew(20deg); 
+  -moz-transform: skew(20deg);
   -o-transform: skew(20deg);
   transform: skew(20deg);
   border-radius: 0;
@@ -369,7 +389,7 @@ export default {
 
 .innertrap {
   -webkit-transform: skew(-20deg);
-  -moz-transform: skew(-20deg); 
+  -moz-transform: skew(-20deg);
   -o-transform: skew(-20deg);
   transform: skew(-20deg);
 }

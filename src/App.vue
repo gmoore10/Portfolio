@@ -5,7 +5,8 @@
       <v-toolbar dark color="primary">
         <v-toolbar-title>Copyright &copy; 2018 Garrett Moore. All Rights Reserved</v-toolbar-title>
       </v-toolbar>
-      <div id="animate" style="display: none; position: absolute; z-index: 1000; top: 50%; left: 50%;">
+      <div id="animate"
+           style="display: none; position: absolute; z-index: 1000; top: 50%; left: 50%;">
         <component v-bind:is="currentSkillComponent"></component>
       </div>
     </v-app>
@@ -61,7 +62,7 @@ Vue.component('SkillVueJS', SkillVueJS)
 export default {
   name: 'App',
   computed: {
-    currentSkillComponent() {
+    currentSkillComponent () {
       return this.$store.state.currentSkillComponent
     }
   },
@@ -73,7 +74,8 @@ export default {
     })
 
     window.addEventListener('scroll', () => {
-      this.$store.commit('saveScrollPosition') })
+      this.$store.commit('saveScrollPosition')
+    })
   }
 }
 </script>
@@ -81,46 +83,46 @@ export default {
 <style>
 @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
 
-  body {
-    background-color: rgb(233, 233, 233);
-    font-family: Arial, Helvetica, sans-serif;
-  }
+body {
+  background-color: rgb(233, 233, 233);
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  #app {
-    background: #fff;
-    margin: auto;
-    height: calc(60% - 50px);
-  }
+#app {
+  background: #fff;
+  margin: auto;
+  height: calc(60% - 50px);
+}
 
-  .page {
-    position: absolute;
-    width: inherit;
-  }
+.page {
+  position: absolute;
+  width: inherit;
+}
 
-  .no-padding {
-    padding: 0 !important;
-  }
+.no-padding {
+  padding: 0 !important;
+}
 
-  #animate {
-    border-top: 6px solid #1976d2;
-    border-left: 1px solid #1976d2;
-    border-right: 1px solid #1976d2;
-    border-bottom: 6px solid #1976d2;
-    border-radius: 6px;
-  }
-  .skillsLeft {
-    margin: 0 auto;
-    height: 100%;
-  }
-  .skillsRight {
-    margin: 0 auto;
-    height: 100%;
-  }
-  .center-text {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
+#animate {
+  border-top: 6px solid #1976d2;
+  border-left: 1px solid #1976d2;
+  border-right: 1px solid #1976d2;
+  border-bottom: 6px solid #1976d2;
+  border-radius: 6px;
+}
+.skillsLeft {
+  margin: 0 auto;
+  height: 100%;
+}
+.skillsRight {
+  margin: 0 auto;
+  height: 100%;
+}
+.center-text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 </style>
 

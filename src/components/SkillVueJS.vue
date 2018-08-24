@@ -18,7 +18,7 @@
               <v-card-text>
                 VueJS is a web application framework that runs on top of JavaScript to provide
                 a more advanced web rendering engine that incorporates modern programming techniques
-                such as separation of concerns, precompiling of resources, unit testing and code 
+                such as separation of concerns, precompiling of resources, unit testing and code
                 validation when used with the commandline interface. VueJS can be used to run
                 and entire website or can be included on individual pages when needed.
               </v-card-text>
@@ -26,8 +26,8 @@
             <v-layout row>
               <v-card-text>
                 VueJS has many competitors, including Angular and ReactJS, each with their own
-                advantages and drawbacks. However, as of 2018, VueJS is considered by many to be the fastest
-                renderer compared to its competition.
+                advantages and drawbacks. However, as of 2018, VueJS is considered by many
+                to be the fastest renderer compared to its competition.
               </v-card-text>
             </v-layout>
           </v-container>
@@ -42,12 +42,14 @@
   </v-container>
 </template>
 <script>
+import { TweenLite } from 'gsap'
+
 export default {
   name: 'SkillVueJS',
   methods: {
     animateIt () {
       TweenLite.to('#skillsContainer', 0.25, {
-          opacity: 1
+        opacity: 1
       })
     },
     closeSkill () {
