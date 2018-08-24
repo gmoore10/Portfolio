@@ -46,7 +46,7 @@
                       <img src="../assets/ExampleVastara.png" style="width: 350px; height: 225px;" alt="" />
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline white--text text-xs-center"><a href="http://137.117.93.108/vastara/" style="color: white" target="_blank">Vastara</a></div>
+                      <div class="headline white--text text-xs-center"><a href="http://www.garretttmoore.com/examples/vastara/" style="color: white" target="_blank">Vastara</a></div>
                     </v-card-title>
                     <v-card-text class="white--text">
                       A responsive marketing website
@@ -72,7 +72,7 @@
                       <img src="../assets/ExampleConspectus.png" style="width: 350px; height: 225px;" alt="" />
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline white--text text-xs-center"><a href="http://137.117.93.108/" style="color: white" target="_blank">Events Dashboard</a></div>
+                      <div class="headline white--text text-xs-center"><a href="http://www.garretttmoore.com/examples/" style="color: white" target="_blank">Events Dashboard</a></div>
                     </v-card-title>
                     <v-card-text class="white--text">
                       Data Driven Dashboard
